@@ -19,8 +19,8 @@ module.exports = function (options) {
     } else {
         db.once('open', function () {
             const s = config.db.host.indexOf("@") + 1
-            const host = s > 0 ? config.db.host.slice(s) : config.db.host
-            console.log(("mongodb connected: " + host);
+            const host = s > 0 ? config.db.host.slice(s) : config.db.host;
+            console.log("mongodb connected: " + host);
         });
     }
 
